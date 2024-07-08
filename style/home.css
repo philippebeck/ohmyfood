@@ -1,3 +1,4 @@
+/* ********** FONTS ********** */
 @font-face {
   font-family: Roboto;
   font-style: normal;
@@ -12,5 +13,35 @@
   font-display: swap;
   src: local("Shrikhand-Regular"), url("fonts/Shrikhand-Regular.woff2") format("woff2");
 }
+/* ********** RESET ********** */
+body,
+ul,
+figure {
+  margin: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ********** HEADER ********** */
+/* ********** MAIN ********** */
+/* ********** FOOTER ********** */
 
 /*# sourceMappingURL=home.css.map */

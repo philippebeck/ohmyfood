@@ -1,4 +1,4 @@
-//! ********** BREAKPOINTS **********
+// ********** BREAKPOINTS **********
 
 $md: 48rem;
 $lg: 64rem;
@@ -8,7 +8,7 @@ $breakpoints: (
   "lg": $lg
 ) !default;
 
-//! ********** FONTS **********
+/* ********** FONTS ********** */
 
 $font-families: Roboto, Shrikhand;
 
@@ -31,7 +31,7 @@ $font-families: Roboto, Shrikhand;
 $sans-serif: Roboto, sans-serif;
 $serif: Shrikhand, serif;
 
-//! ********** COLORS **********
+// ********** COLORS **********
 
 $primary: #9356DC;
 $secondary: #FF79DA;
@@ -43,12 +43,42 @@ $silver: #F6F6F6;
 $gray: #EAEAEA;
 $black: #000;
 
-//! ********** HEADER **********
+/* ********** RESET ********** */
+
+body,
+ul,
+figure {
+  margin: 0;
+}
+
+body {
+  font-family: $sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ********** HEADER ********** */
 
 
 
-//! ********** MAIN **********
+/* ********** MAIN ********** */
 
 
 
-//! ********** FOOTER **********
+/* ********** FOOTER ********** */
+
+
