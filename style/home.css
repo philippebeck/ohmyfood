@@ -45,7 +45,10 @@ header {
   display: flex;
   place-content: center;
   place-items: center;
+  position: relative;
+  z-index: 10;
   height: 63px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 header .fa-arrow-left {
   position: absolute;
@@ -80,6 +83,30 @@ footer ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+/* ********** FORM ********** */
+form {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  gap: 10px;
+  height: 50px;
+  background-color: #EAEAEA;
+  color: #353535;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+form input {
+  border: none;
+  width: 115px;
+  font-size: 1rem;
+  background-color: #EAEAEA;
+  color: #353535;
+}
+
+/* ********** HGROUP ********** */
+hgroup {
+  text-align: center;
 }
 
 /*# sourceMappingURL=home.css.map */

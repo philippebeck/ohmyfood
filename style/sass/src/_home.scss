@@ -1,0 +1,26 @@
+/* ********** FORM ********** */
+
+form {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  gap: 10px;
+  height: 50px;
+  background-color: $gray;
+  color: $slate;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  input {
+    border: none;
+    width: 115px;
+    font-size: 1rem;
+    background-color: $gray;
+    color: $slate;
+  }
+}
+
+/* ********** HGROUP ********** */
+
+hgroup {
+  text-align: center;
+}
