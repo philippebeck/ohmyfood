@@ -62,6 +62,7 @@ header img {
 /* ********** MAIN ********** */
 .btn {
   display: inline-block;
+  margin: 30px auto;
   border: none;
   border-radius: 25px;
   padding: 15px 25px;
@@ -106,7 +107,14 @@ form input {
 
 /* ********** HGROUP ********** */
 hgroup {
+  padding: 40px 0 10px;
   text-align: center;
+  background-color: #F6F6F6;
+}
+hgroup h1 {
+  margin: auto;
+  width: 275px;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=home.css.map */

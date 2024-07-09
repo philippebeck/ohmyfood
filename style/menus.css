@@ -62,6 +62,7 @@ header img {
 /* ********** MAIN ********** */
 .btn {
   display: inline-block;
+  margin: 30px auto;
   border: none;
   border-radius: 25px;
   padding: 15px 25px;
