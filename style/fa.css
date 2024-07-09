@@ -53,6 +53,10 @@
   content: "\f2b5";
 }
 
+.fa-arrow-left::before {
+  content: "\f060";
+}
+
 .fa-circle-check::before {
   content: "\f058";
 }
