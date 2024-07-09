@@ -15,8 +15,13 @@
 }
 /* ********** RESET ********** */
 body,
+h1,
+h2,
+h3,
 ul,
-figure {
+ol,
+figure,
+p {
   margin: 0;
 }
 
@@ -61,11 +66,12 @@ header img {
 
 /* ********** MAIN ********** */
 .btn {
-  display: inline-block;
+  display: block;
   margin: 30px auto;
   border: none;
   border-radius: 25px;
   padding: 15px 25px;
+  width: 200px;
   font-weight: bold;
   background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   color: #FFF;
@@ -73,6 +79,9 @@ header img {
 
 /* ********** FOOTER ********** */
 footer {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
   padding: 25px;
   background-color: #353535;
   color: #FFF;

@@ -15,8 +15,13 @@
 }
 /* ********** RESET ********** */
 body,
+h1,
+h2,
+h3,
 ul,
-figure {
+ol,
+figure,
+p {
   margin: 0;
 }
 
@@ -61,11 +66,12 @@ header img {
 
 /* ********** MAIN ********** */
 .btn {
-  display: inline-block;
+  display: block;
   margin: 30px auto;
   border: none;
   border-radius: 25px;
   padding: 15px 25px;
+  width: 200px;
   font-weight: bold;
   background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   color: #FFF;
@@ -73,6 +79,9 @@ header img {
 
 /* ********** FOOTER ********** */
 footer {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
   padding: 25px;
   background-color: #353535;
   color: #FFF;
@@ -107,14 +116,107 @@ form input {
 
 /* ********** HGROUP ********** */
 hgroup {
-  padding: 40px 0 10px;
+  padding: 40px 20px 10px;
   text-align: center;
   background-color: #F6F6F6;
 }
 hgroup h1 {
-  margin: auto;
+  margin: 0 auto 10px;
   width: 275px;
   font-size: 1.5rem;
+}
+
+/* ********** FUNCTIONING ********** */
+section {
+  margin: 50px 20px;
+}
+section ol {
+  display: flex;
+  flex-flow: wrap;
+  gap: 25px;
+  margin: 20px 0;
+  padding: 10px;
+  counter-reset: li;
+}
+section li {
+  display: flex;
+  place-items: center;
+  gap: 20px;
+  position: relative;
+  border-radius: 20px;
+  padding: 30px 40px;
+  width: 100%;
+  background: #F6F6F6;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+section li::before {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  position: absolute;
+  left: -12px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  counter-increment: li;
+  content: counters(li, ".") "";
+  background: #9356DC;
+  color: white;
+}
+section li i {
+  color: #7E7E7E;
+}
+section li:hover i, section li:focus i {
+  color: #9356DC;
+}
+
+/* ********** RESTAURANTS ********** */
+article {
+  padding: 50px 20px;
+  background-color: #F6F6F6;
+}
+article ul {
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+  padding: 20px 0;
+}
+article li {
+  width: 100%;
+}
+article figure {
+  position: relative;
+}
+article b {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 2px;
+  padding: 7px 9px;
+  background-color: #99E2D0;
+  color: #008766;
+}
+article img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 200px;
+}
+article figcaption {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  position: relative;
+  margin-top: -5px;
+  border-radius: 0 0 15px 15px;
+  padding: 15px;
+  background-color: #FFF;
+}
+article .fa-heart {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=home.css.map */

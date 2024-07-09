@@ -33,22 +33,28 @@ $serif: Shrikhand, serif;
 
 // ********** COLORS **********
 
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiary: #99E2D0;
-$quaternary: #008766;
+$primary:     #9356DC;
+$secondary:   #FF79DA;
+$tertiary:    #99E2D0;
+$quaternary:  #008766;
 
-$white: #FFF;
-$silver: #F6F6F6;
-$gray: #EAEAEA;
-$slate: #353535;
-$black: #000;
+$white:     #FFF;
+$silver:    #F6F6F6;
+$lightgrey: #EAEAEA;
+$darkgray:  #7E7E7E;
+$slate:     #353535;
+$black:     #000;
 
 /* ********** RESET ********** */
 
 body,
+h1,
+h2,
+h3,
 ul,
-figure {
+ol,
+figure,
+p {
   margin: 0;
 }
 
@@ -97,11 +103,12 @@ header {
 /* ********** MAIN ********** */
 
 .btn {
-  display: inline-block;
+  display: block;
   margin: 30px auto;
   border: none;
   border-radius: 25px;
   padding: 15px 25px;
+  width: 200px;
   font-weight: bold;
   background-image: linear-gradient(180deg, $secondary 0%, $primary 100%);
   color: $white;
@@ -110,6 +117,9 @@ header {
 /* ********** FOOTER ********** */
 
 footer {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
   padding: 25px;
   background-color: $slate;
   color: $white;
