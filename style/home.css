@@ -41,7 +41,45 @@ a {
 }
 
 /* ********** HEADER ********** */
+header {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  height: 63px;
+}
+header .fa-arrow-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+header img {
+  width: 162px;
+}
+
 /* ********** MAIN ********** */
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 25px;
+  font-weight: bold;
+  background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  color: #FFF;
+}
+
 /* ********** FOOTER ********** */
+footer {
+  padding: 25px;
+  background-color: #353535;
+  color: #FFF;
+}
+footer h3 {
+  font-family: Shrikhand, serif;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 /*# sourceMappingURL=home.css.map */

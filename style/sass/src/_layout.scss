@@ -41,6 +41,7 @@ $fourth: #008766;
 $white: #FFF;
 $silver: #F6F6F6;
 $gray: #EAEAEA;
+$slate: #353535;
 $black: #000;
 
 /* ********** RESET ********** */
@@ -73,12 +74,49 @@ a {
 
 /* ********** HEADER ********** */
 
+header {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  height: 63px;
 
+  .fa-arrow-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  img {
+    width: 162px;
+  }
+}
 
 /* ********** MAIN ********** */
 
-
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 25px;
+  font-weight: bold;
+  background-image: linear-gradient(180deg, $secondary 0%, $primary 100%);
+  color: $white;
+}
 
 /* ********** FOOTER ********** */
 
+footer {
+  padding: 25px;
+  background-color: $slate;
+  color: $white;
 
+  h3 {
+    font-family: $serif;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
