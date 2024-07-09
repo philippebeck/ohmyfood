@@ -25,6 +25,12 @@
   font-family: 'Font Awesome 6 Free';
 }
 
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
 .fa-fw {
   text-align: center;
   width: 1.25em;
