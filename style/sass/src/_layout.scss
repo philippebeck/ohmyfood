@@ -87,7 +87,7 @@ header {
   position: relative;
   z-index: 10;
   height: 63px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 
   .fa-arrow-left {
     position: absolute;
@@ -112,6 +112,14 @@ header {
   font-weight: bold;
   background-image: linear-gradient(180deg, $secondary 0%, $primary 100%);
   color: $white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 
 /* ********** FOOTER ********** */
