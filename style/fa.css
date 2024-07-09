@@ -25,6 +25,11 @@
   font-family: 'Font Awesome 6 Free';
 }
 
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
 .fa-location-dot::before {
   content: "\f3c5";
 }
@@ -49,8 +54,8 @@
   content: "\f2e7";
 }
 
-.fa-handshake::before {
-  content: "\f2b5";
+.fa-handshake-angle::before {
+  content: "\f4c4";
 }
 
 .fa-arrow-left::before {
