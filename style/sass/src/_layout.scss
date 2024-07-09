@@ -1,49 +1,8 @@
-// ********** BREAKPOINTS **********
-
-$md: 48rem;
-$lg: 64rem;
-
-$breakpoints: (
-  "md": $md,
-  "lg": $lg
-) !default;
-
 /* ********** FONTS ********** */
-
-$font-families: Roboto, Shrikhand;
-
-@mixin font-face($font-family) {
-  @font-face {
-    font-family: $font-family;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src:
-      local("#{$font-family}-Regular"),
-      url("../fonts/#{$font-family}-Regular.woff2") format("woff2");
-  }
-}
 
 @each $font-family in $font-families {
   @include font-face($font-family);
 }
-
-$sans-serif: Roboto, sans-serif;
-$serif: Shrikhand, serif;
-
-// ********** COLORS **********
-
-$primary:     #9356DC;
-$secondary:   #FF79DA;
-$tertiary:    #99E2D0;
-$quaternary:  #008766;
-
-$white:     #FFF;
-$silver:    #F6F6F6;
-$lightgrey: #EAEAEA;
-$darkgray:  #7E7E7E;
-$slate:     #353535;
-$black:     #000;
 
 /* ********** RESET ********** */
 
