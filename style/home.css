@@ -83,6 +83,13 @@ header img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+.fa-heart {
+  position: absolute;
+  z-index: 100;
+  font-size: 1.35rem;
+  cursor: pointer;
+}
+
 /* ********** FOOTER ********** */
 footer {
   display: flex;
@@ -120,7 +127,7 @@ form input {
   color: #353535;
 }
 
-/* ********** HGROUP ********** */
+/* ********** INTRO ********** */
 hgroup {
   padding: 40px 20px 10px;
   text-align: center;
@@ -219,10 +226,8 @@ article figcaption {
   background-color: #FFF;
 }
 article .fa-heart {
-  position: absolute;
-  top: 30px;
-  right: 25px;
-  cursor: pointer;
+  top: 20px;
+  right: 20px;
 }
 
 /*# sourceMappingURL=home.css.map */

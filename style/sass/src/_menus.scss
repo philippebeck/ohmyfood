@@ -1,0 +1,98 @@
+main {
+  padding-bottom: 10px;
+  background-color: $silver;
+}
+
+/* ********** INTRO ********** */
+
+hgroup {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 275px;
+  }
+
+  h1 {
+    position: relative;
+    z-index: 10;
+    margin-top: -40px;
+    border-radius: 35px 35px 0 0;
+    padding: 35px 15px 0;
+    font-family: $serif;
+    font-size: 1.7rem;
+    background-color: $silver;
+  }
+
+  .fa-heart {
+    right: 40px;
+    bottom: 10px;
+  }
+}
+
+/* ********** MENU ********** */
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 10px;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  div {
+    margin-top: 5px;
+    width: 40px;
+    height: 3px;
+    background-color: $tertiary;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  li {
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 10px 20px;
+    height: 69px;
+    background-color: $white;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  h3 {
+    margin-bottom: 5px;
+    font-size: 1.125rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  b {
+    display: flex;
+    place-content: flex-end;
+    position: relative;
+    bottom: 18px;
+  }
+
+  .fa-circle-check {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+  }
+}

@@ -81,6 +81,13 @@ header {
   }
 }
 
+.fa-heart {
+  position: absolute;
+  z-index: 100;
+  font-size: 1.35rem;
+  cursor: pointer;
+}
+
 /* ********** FOOTER ********** */
 
 footer {
