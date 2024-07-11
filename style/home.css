@@ -245,4 +245,68 @@ article .fa-heart {
   right: 20px;
 }
 
+/* ********** TABLET ********** */
+@media (min-width: 48rem) {
+  hgroup {
+    padding: 40px 50px 10px;
+  }
+  hgroup h1 {
+    font-size: 2rem;
+  }
+  hgroup h1,
+  hgroup p {
+    width: fit-content;
+  }
+  section {
+    padding: 50px;
+  }
+  article {
+    padding: 50px;
+  }
+  article ul {
+    gap: 50px;
+  }
+  article li {
+    width: calc((100% - 50px) / 2);
+  }
+  footer {
+    flex-flow: row-reverse;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    height: 114px;
+  }
+  footer ul {
+    flex-flow: column wrap;
+    width: 100%;
+  }
+  footer li:nth-child(2) {
+    margin-right: 40px;
+  }
+}
+/* ********** DESKTOP ********** */
+@media (min-width: 64rem) {
+  hgroup h1 {
+    font-size: 2.5rem;
+  }
+  section {
+    margin: auto;
+    max-width: 1080px;
+  }
+  section ol {
+    flex-flow: nowrap;
+  }
+  article h2,
+  article ul {
+    margin: auto;
+    max-width: 1080px;
+  }
+  footer {
+    gap: 80px;
+  }
+  footer ul {
+    flex-flow: row;
+    place-content: flex-end;
+  }
+}
+
 /*# sourceMappingURL=home.css.map */
