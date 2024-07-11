@@ -114,14 +114,20 @@ form {
   place-content: center;
   place-items: center;
   gap: 10px;
+  position: relative;
   height: 50px;
   background-color: #EAEAEA;
   color: #353535;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+form label,
+form input {
+  position: relative;
+  left: 10px;
 }
 form input {
   border: none;
-  width: 115px;
+  width: 130px;
   font-size: 1rem;
   background-color: #EAEAEA;
   color: #353535;
@@ -135,13 +141,22 @@ hgroup {
 }
 hgroup h1 {
   margin: 0 auto 10px;
-  width: 275px;
+  width: 280px;
   font-size: 1.5rem;
+}
+hgroup p {
+  margin: auto;
+  width: 310px;
+  font-size: 1.1rem;
+  color: #353535;
+}
+hgroup a {
+  font-size: 1rem;
 }
 
 /* ********** FUNCTIONING ********** */
 section {
-  margin: 50px 20px;
+  padding: 50px 20px;
 }
 section ol {
   display: flex;
