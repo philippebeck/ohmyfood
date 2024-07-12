@@ -188,22 +188,6 @@ article {
       width: calc((100% - 50px) / 2);
     }
   }
-
-  footer {
-    flex-flow: row-reverse;
-    box-sizing: border-box;
-    padding: 20px 50px;
-    height: 114px;
-
-    ul {
-      flex-flow: column wrap;
-      width: 100%;
-    }
-
-    li:nth-child(2) {
-      margin-right: 40px;
-    }
-  }
 }
 
 /* ********** DESKTOP ********** */
@@ -228,14 +212,5 @@ article {
   article ul {
     margin: auto;
     max-width: 1080px;
-  }
-
-  footer {
-    gap: 80px;
-
-    ul {
-      flex-flow: row;
-      place-content: flex-end;
-    }
   }
 }
