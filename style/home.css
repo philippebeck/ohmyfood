@@ -14,6 +14,10 @@
   src: local("Shrikhand-Regular"), url("../fonts/Shrikhand-Regular.woff2") format("woff2");
 }
 /* ********** RESET ********** */
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 h1,
 h2,
