@@ -126,6 +126,32 @@ footer ul {
   gap: 10px;
 }
 
+/* ********** TABLET ********** */
+@media (min-width: 48rem) {
+  footer {
+    flex-flow: row-reverse;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    height: 114px;
+  }
+  footer ul {
+    flex-flow: column wrap;
+    width: 100%;
+  }
+  footer li:nth-child(2) {
+    margin-right: 40px;
+  }
+}
+/* ********** DESKTOP ********** */
+@media (min-width: 64rem) {
+  footer {
+    gap: 80px;
+  }
+  footer ul {
+    flex-flow: row;
+    place-content: flex-end;
+  }
+}
 @keyframes cover {
   0% {
     width: 100%;
