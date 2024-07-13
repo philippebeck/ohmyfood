@@ -158,7 +158,7 @@ section {
 /* ********** TABLET ********** */
 
 @media (min-width: $md) {
-  hgroup {
+  article > hgroup {
     text-align: center;
   }
 
@@ -172,8 +172,6 @@ section {
     margin: auto;
     width: 634px;
   }
-
-
 }
 
 /* ********** DESKTOP ********** */

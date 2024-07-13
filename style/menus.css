@@ -271,7 +271,7 @@ section li:focus .fa-circle-check {
 
 /* ********** TABLET ********** */
 @media (min-width: 48rem) {
-  hgroup {
+  article > hgroup {
     text-align: center;
   }
   .fa-heart {
