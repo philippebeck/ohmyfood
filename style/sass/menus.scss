@@ -1,14 +1,12 @@
-@import 'src/variables';
-@import 'src/mixins';
+@import 'layout/variables';
+@import 'layout/font-face';
+@import 'layout/reset';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
 
-@import 'src/layout/font-face';
-@import 'src/layout/reset';
-@import 'src/layout/header';
-@import 'src/layout/main';
-@import 'src/layout/footer';
-
-@import 'src/menus/keyframes';
-@import 'src/menus/main';
-@import 'src/menus/intro';
-@import 'src/menus/menu';
-@import 'src/menus/media';
+@import 'menus/keyframes';
+@import 'menus/main';
+@import 'menus/intro';
+@import 'menus/menu';
+@import 'menus/media';
