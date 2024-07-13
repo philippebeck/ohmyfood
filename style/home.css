@@ -151,7 +151,7 @@ footer ul {
     width: 100%;
   }
 }
-@keyframes spin {
+@keyframes rotate {
   0% {
     opacity: 1;
   }
@@ -176,7 +176,7 @@ div [class*=fa-stack] {
   left: calc(50% - 200px);
   opacity: 0;
   color: #99E2D0;
-  animation: spin 3s linear;
+  animation: rotate 3s linear;
 }
 
 /* ********** FORM ********** */

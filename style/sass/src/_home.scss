@@ -15,7 +15,7 @@
   }
 }
 
-@keyframes spin {
+@keyframes rotate {
   0% {
     opacity: 1;
   }
@@ -44,7 +44,7 @@ div {
     left: calc(50% - 200px);
     opacity: 0;
     color: $tertiary;
-    animation: spin 3s linear;
+    animation: rotate 3s linear;
   }
 }
 
