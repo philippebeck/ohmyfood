@@ -344,10 +344,10 @@ article .fa-heart {
   article {
     padding: 50px;
   }
-  ul {
+  article ul {
     gap: 50px;
   }
-  ul li {
+  article ul li {
     width: calc((100% - 50px) / 2);
   }
 }
@@ -360,7 +360,7 @@ article .fa-heart {
     margin: auto;
     max-width: 1080px;
   }
-  ol {
+  section ol {
     flex-flow: nowrap;
   }
   h2,

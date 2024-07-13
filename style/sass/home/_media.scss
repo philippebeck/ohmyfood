@@ -20,13 +20,13 @@
 
   article {
     padding: 50px;
-  }
 
-  ul {
-    gap: 50px;
+    ul {
+      gap: 50px;
 
-    li {
-      width: calc((100% - 50px) / 2);
+      li {
+        width: calc((100% - 50px) / 2);
+      }
     }
   }
 }
@@ -41,10 +41,10 @@
   section {
     margin: auto;
     max-width: 1080px;
-  }
 
-  ol {
-    flex-flow: nowrap;
+    ol {
+      flex-flow: nowrap;
+    }
   }
 
   h2,
