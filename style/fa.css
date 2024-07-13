@@ -31,9 +31,63 @@
   vertical-align: -0.075em;
 }
 
+.fa-10x {
+  font-size: 10em;
+}
+
 .fa-fw {
   text-align: center;
   width: 1.25em;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+.fa-arrow-left::before {
+  content: "\f060";
+}
+
+.fa-circle-check::before {
+  content: "\f058";
+}
+
+.fa-circle-notch::before {
+  content: "\f1ce";
+}
+
+.fa-handshake-angle::before {
+  content: "\f4c4";
+}
+
+.fa-heart::before {
+  content: "\f004";
+}
+
+.fa-list::before {
+  content: "\f03a";
 }
 
 .fa-location-dot::before {
@@ -44,32 +98,12 @@
   content: "\f3cd";
 }
 
-.fa-list::before {
-  content: "\f03a";
-}
-
 .fa-store::before {
   content: "\f54e";
 }
 
-.fa-heart::before {
-  content: "\f004";
-}
-
 .fa-utensils::before {
   content: "\f2e7";
-}
-
-.fa-handshake-angle::before {
-  content: "\f4c4";
-}
-
-.fa-arrow-left::before {
-  content: "\f060";
-}
-
-.fa-circle-check::before {
-  content: "\f058";
 }
 
 :root,
