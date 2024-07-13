@@ -87,11 +87,31 @@ header img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.fa-heart {
+.heart {
+  border: none;
+  background-color: #F6F6F6;
+  padding: 0;
+  font-size: x-large;
+}
+.heart .fa-heart {
   position: absolute;
   z-index: 100;
   font-size: 1.35rem;
   cursor: pointer;
+}
+.heart .fa-heart::before {
+  content: "\f004";
+}
+.heart .fa-regular {
+  opacity: 1;
+}
+.heart .fa-solid {
+  opacity: 0;
+  transition-duration: 2500ms;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /* ********** FOOTER ********** */
@@ -154,29 +174,35 @@ footer ul {
 @keyframes rotate {
   0% {
     opacity: 1;
+    transform: rotate(-20deg);
   }
   80% {
     opacity: 1;
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(200deg);
   }
 }
 /* ********** LOADER ********** */
-div {
+.loader {
   position: fixed;
   z-index: 1000;
   width: 0%;
   height: 0%;
   background-color: #353535;
-  animation: cover 3s;
+  animation: cover 2s;
 }
-div [class*=fa-stack] {
+.loader [class*=fa-stack] {
   top: calc(50% - 160px);
   left: calc(50% - 200px);
   opacity: 0;
+  animation: rotate 2s linear;
+}
+.loader .fa-stack-1x {
   color: #99E2D0;
-  animation: rotate 3s linear;
+}
+.loader .fa-stack-2x {
+  color: #9356DC;
 }
 
 /* ********** FORM ********** */
@@ -321,12 +347,12 @@ article .fa-heart {
   hgroup {
     padding: 40px 50px 10px;
   }
-  hgroup h1 {
-    font-size: 2rem;
-  }
   hgroup h1,
   hgroup p {
     width: fit-content;
+  }
+  h1 {
+    font-size: 2rem;
   }
   section {
     padding: 50px;
@@ -334,27 +360,27 @@ article .fa-heart {
   article {
     padding: 50px;
   }
-  article ul {
+  ul {
     gap: 50px;
   }
-  article li {
+  ul li {
     width: calc((100% - 50px) / 2);
   }
 }
 /* ********** DESKTOP ********** */
 @media (min-width: 64rem) {
-  hgroup h1 {
+  h1 {
     font-size: 2.5rem;
   }
   section {
     margin: auto;
     max-width: 1080px;
   }
-  section ol {
+  ol {
     flex-flow: nowrap;
   }
-  article h2,
-  article ul {
+  h2,
+  ul {
     margin: auto;
     max-width: 1080px;
   }

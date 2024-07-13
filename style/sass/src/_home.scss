@@ -18,6 +18,7 @@
 @keyframes rotate {
   0% {
     opacity: 1;
+    transform: rotate(-20deg);
   }
 
   80% {
@@ -25,26 +26,33 @@
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: rotate(200deg);
   }
 }
 
 /* ********** LOADER ********** */
 
-div {
+.loader {
   position: fixed;
   z-index: 1000;
   width: 0%;
   height: 0%;
   background-color: $slate;
-  animation: cover 3s;
+  animation: cover 2s;
 
   [class*=fa-stack] {
     top: calc(50% - 160px);
     left: calc(50% - 200px);
     opacity: 0;
+    animation: rotate 2s linear;
+  }
+
+  .fa-stack-1x {
     color: $tertiary;
-    animation: rotate 3s linear;
+  }
+
+  .fa-stack-2x {
+    color: $primary;
   }
 }
 
@@ -213,14 +221,14 @@ article {
   hgroup {
     padding: 40px 50px 10px;
 
-    h1 {
-      font-size: 2rem;
-    }
-
     h1,
     p {
       width: fit-content;
     }
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
   section {
@@ -229,10 +237,10 @@ article {
 
   article {
     padding: 50px;
+  }
 
-    ul {
-      gap: 50px;
-    }
+  ul {
+    gap: 50px;
 
     li {
       width: calc((100% - 50px) / 2);
@@ -243,23 +251,21 @@ article {
 /* ********** DESKTOP ********** */
 
 @media (min-width: $lg) {
-  hgroup {
-    h1 {
-      font-size: 2.5rem;
-    }
+  h1 {
+    font-size: 2.5rem;
   }
 
   section {
     margin: auto;
     max-width: 1080px;
-
-    ol {
-      flex-flow: nowrap;
-    }
   }
 
-  article h2,
-  article ul {
+  ol {
+    flex-flow: nowrap;
+  }
+
+  h2,
+  ul {
     margin: auto;
     max-width: 1080px;
   }
