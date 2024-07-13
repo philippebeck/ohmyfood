@@ -1,4 +1,3 @@
-/* ********** FONT-FACE ********** */
 @font-face {
   font-family: Roboto;
   font-style: normal;
@@ -13,7 +12,6 @@
   font-display: swap;
   src: local("Shrikhand-Regular"), url("../fonts/Shrikhand-Regular.woff2") format("woff2");
 }
-/* ********** RESET ********** */
 html {
   scroll-behavior: smooth;
 }
@@ -49,7 +47,6 @@ a {
   color: inherit;
 }
 
-/* ********** HEADER ********** */
 header {
   display: flex;
   place-content: center;
@@ -68,7 +65,6 @@ header img {
   width: 162px;
 }
 
-/* ********** MAIN ********** */
 .btn {
   display: block;
   margin: 30px auto;
@@ -113,7 +109,6 @@ header img {
   color: transparent;
 }
 
-/* ********** FOOTER ********** */
 footer {
   display: flex;
   flex-flow: column;
@@ -131,33 +126,6 @@ footer ul {
   gap: 10px;
 }
 
-/* ********** TABLET ********** */
-@media (min-width: 48rem) {
-  footer {
-    flex-flow: row-reverse;
-    box-sizing: border-box;
-    padding: 20px 50px;
-    height: 114px;
-  }
-  footer ul {
-    flex-flow: column wrap;
-    width: 100%;
-  }
-  footer li:nth-child(2) {
-    margin-right: 40px;
-  }
-}
-/* ********** DESKTOP ********** */
-@media (min-width: 64rem) {
-  footer {
-    gap: 80px;
-  }
-  footer ul {
-    flex-flow: row;
-    place-content: flex-end;
-  }
-}
-/* ********** KEYFRAMES ********** */
 @keyframes cover {
   0% {
     width: 100%;
@@ -182,7 +150,6 @@ footer ul {
     transform: rotate(200deg);
   }
 }
-/* ********** LOADER ********** */
 .loader {
   position: fixed;
   z-index: 1000;
@@ -204,7 +171,6 @@ footer ul {
   color: #9356DC;
 }
 
-/* ********** FORM ********** */
 form {
   display: flex;
   place-content: center;
@@ -229,7 +195,6 @@ form input {
   color: #353535;
 }
 
-/* ********** INTRO ********** */
 hgroup {
   padding: 40px 20px 10px;
   text-align: center;
@@ -250,7 +215,6 @@ hgroup a {
   font-size: 1rem;
 }
 
-/* ********** FUNCTIONING ********** */
 section {
   padding: 50px 20px;
 }
@@ -295,7 +259,6 @@ section li:hover i, section li:focus i {
   color: #9356DC;
 }
 
-/* ********** RESTAURANTS ********** */
 article {
   padding: 50px 20px;
   background-color: #F6F6F6;

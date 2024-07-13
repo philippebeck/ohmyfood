@@ -1,0 +1,25 @@
+form {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  gap: 10px;
+  position: relative;
+  height: 50px;
+  background-color: $lightgrey;
+  color: $slate;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  label,
+  input {
+    position: relative;
+    left: 10px;
+  }
+
+  input {
+    border: none;
+    width: 130px;
+    font-size: 1rem;
+    background-color: $lightgrey;
+    color: $slate;
+  }
+}

@@ -1,0 +1,23 @@
+.loader {
+  position: fixed;
+  z-index: 1000;
+  width: 0%;
+  height: 0%;
+  background-color: $slate;
+  animation: cover 2s;
+
+  [class*=fa-stack] {
+    top: calc(50% - 160px);
+    left: calc(50% - 200px);
+    opacity: 0;
+    animation: rotate 2s linear;
+  }
+
+  .fa-stack-1x {
+    color: $tertiary;
+  }
+
+  .fa-stack-2x {
+    color: $primary;
+  }
+}

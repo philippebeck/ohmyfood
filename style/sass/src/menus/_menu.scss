@@ -1,58 +1,3 @@
-/* ********** KEYFRAMES ********** */
-
-@keyframes translate {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-}
-
-/* ********** MAIN ********** */
-
-main {
-  img {
-    width: 100%;
-    height: 275px;
-    object-position: 50% 60%;
-  }
-}
-
-/* ********** INTRO ********** */
-
-article {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding-bottom: 20px;
-  background-color: $silver;
-
-  & > hgroup {
-    position: relative;
-
-    h1 {
-      position: relative;
-      z-index: 10;
-      margin-top: -40px;
-      border-radius: 35px 35px 0 0;
-      padding: 35px 15px 0;
-      font-family: $serif;
-      font-size: 1.7rem;
-      background-color: $silver;
-    }
-
-    .fa-heart {
-      right: 40px;
-      bottom: 10px;
-    }
-  }
-}
-
-/* ********** MENU ********** */
-
 section {
   display: flex;
   flex-direction: column;
@@ -152,38 +97,5 @@ section {
   li:hover .fa-circle-check,
   li:focus .fa-circle-check {
     transform: translateX(0);
-  }
-}
-
-/* ********** TABLET ********** */
-
-@media (min-width: $md) {
-  article > hgroup {
-    text-align: center;
-  }
-
-  .heart .fa-heart {
-    position: relative;
-    top: -35px;
-    left: 170px;
-  }
-
-  section {
-    margin: auto;
-    width: 634px;
-  }
-}
-
-/* ********** DESKTOP ********** */
-
-@media (min-width: $lg) {
-  main {
-    background-color: $white;
-  }
-
-  article {
-    margin: auto;
-    max-width: 1080px;
-    background-color: $silver;
   }
 }

@@ -1,0 +1,32 @@
+/* ********** TABLET ********** */
+
+@media (min-width: $md) {
+  article > hgroup {
+    text-align: center;
+  }
+
+  .heart .fa-heart {
+    position: relative;
+    top: -35px;
+    left: 170px;
+  }
+
+  section {
+    margin: auto;
+    width: 634px;
+  }
+}
+
+/* ********** DESKTOP ********** */
+
+@media (min-width: $lg) {
+  main {
+    background-color: $white;
+  }
+
+  article {
+    margin: auto;
+    max-width: 1080px;
+    background-color: $silver;
+  }
+}

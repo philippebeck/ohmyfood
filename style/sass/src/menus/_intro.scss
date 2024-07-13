@@ -1,0 +1,27 @@
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 20px;
+  background-color: $silver;
+
+  & > hgroup {
+    position: relative;
+
+    h1 {
+      position: relative;
+      z-index: 10;
+      margin-top: -40px;
+      border-radius: 35px 35px 0 0;
+      padding: 35px 15px 0;
+      font-family: $serif;
+      font-size: 1.7rem;
+      background-color: $silver;
+    }
+
+    .fa-heart {
+      right: 40px;
+      bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@keyframes translate {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}

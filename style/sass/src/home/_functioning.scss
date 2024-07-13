@@ -1,0 +1,49 @@
+section {
+  padding: 50px 20px;
+
+  ol {
+    display: flex;
+    flex-flow: wrap;
+    gap: 25px;
+    margin: 20px 0;
+    padding: 10px;
+    counter-reset: li;
+  }
+
+  li {
+    display: flex;
+    place-items: center;
+    gap: 20px;
+    position: relative;
+    border-radius: 20px;
+    padding: 30px 40px;
+    width: 100%;
+    background: #F6F6F6;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+    &::before {
+      display: flex;
+      place-content: center;
+      place-items: center;
+      position: absolute;
+      left: -12px;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      counter-increment: li;
+      content: counters(li, ".") "";
+      background: $primary;
+      color: white;
+    }
+
+    i {
+      color: $darkgray;
+    }
+
+    &:hover i,
+    &:focus i {
+      color: $primary;
+    }
+  }
+}

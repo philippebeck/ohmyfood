@@ -1,4 +1,14 @@
 @import 'src/variables';
 @import 'src/mixins';
-@import 'src/layout';
-@import 'src/menus';
+
+@import 'src/layout/font-face';
+@import 'src/layout/reset';
+@import 'src/layout/header';
+@import 'src/layout/main';
+@import 'src/layout/footer';
+
+@import 'src/menus/keyframes';
+@import 'src/menus/main';
+@import 'src/menus/intro';
+@import 'src/menus/menu';
+@import 'src/menus/media';

@@ -1,0 +1,22 @@
+hgroup {
+  padding: 40px 20px 10px;
+  text-align: center;
+  background-color: $silver;
+
+  h1 {
+    margin: 0 auto 10px;
+    width: 280px;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: auto;
+    width: 310px;
+    font-size: 1.1rem;
+    color: $slate;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+}

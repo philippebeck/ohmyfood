@@ -1,4 +1,16 @@
 @import 'src/variables';
 @import 'src/mixins';
-@import 'src/layout';
-@import 'src/home';
+
+@import 'src/layout/font-face';
+@import 'src/layout/reset';
+@import 'src/layout/header';
+@import 'src/layout/main';
+@import 'src/layout/footer';
+
+@import 'src/home/keyframes';
+@import 'src/home/loader';
+@import 'src/home/form';
+@import 'src/home/intro';
+@import 'src/home/functioning';
+@import 'src/home/restaurants';
+@import 'src/home/media';
