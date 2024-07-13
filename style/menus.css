@@ -156,10 +156,17 @@ main img {
 }
 
 /* ********** INTRO ********** */
-hgroup {
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 20px;
+  background-color: #F6F6F6;
+}
+article > hgroup {
   position: relative;
 }
-hgroup h1 {
+article > hgroup h1 {
   position: relative;
   z-index: 10;
   margin-top: -40px;
@@ -169,81 +176,97 @@ hgroup h1 {
   font-size: 1.7rem;
   background-color: #F6F6F6;
 }
-hgroup .fa-heart {
+article > hgroup .fa-heart {
   right: 40px;
   bottom: 10px;
 }
 
 /* ********** MENU ********** */
-article {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding-bottom: 20px;
-  background-color: #F6F6F6;
-}
-article section {
+section {
   display: flex;
   flex-direction: column;
   gap: 12px;
   padding: 0 10px;
 }
-article section:nth-child(2) {
+section:nth-child(2) {
   animation: translate 1s;
 }
-article section:nth-child(3) {
+section:nth-child(3) {
   animation: translate 2s;
 }
-article section:nth-child(4) {
+section:nth-child(4) {
   animation: translate 3s;
 }
-article h2 {
+section h2 {
   font-size: 1rem;
   text-transform: uppercase;
 }
-article div {
+section .underline {
   margin-top: 5px;
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
 }
-article ul {
+section ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-article li {
+section li {
+  display: flex;
+  place-content: space-between;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
   border-radius: 15px;
-  padding: 10px 20px;
   height: 69px;
   background-color: #FFF;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-article h3 {
+section hgroup,
+section hgroup h3,
+section hgroup p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section hgroup {
+  padding: 10px 20px;
+}
+section hgroup h3 {
   margin-bottom: 5px;
   font-size: 1.125rem;
 }
-article p {
+section hgroup p {
   font-size: 0.9rem;
 }
-article b {
+section .price {
   display: flex;
-  place-content: flex-end;
-  position: relative;
-  bottom: 18px;
+  gap: 20px;
+  transform: translateX(70px);
+  transition: transform 700ms;
 }
-article .fa-circle-check {
-  position: absolute;
-  z-index: 1;
-  top: 10%;
-  right: -65px;
-  padding: 30px 20px;
+section b {
+  place-self: flex-end;
+  position: relative;
+  bottom: 13px;
+}
+section .fa-circle-check {
+  display: flex;
+  place-items: center;
+  padding: 0 20px;
+  height: 100%;
+  transform: translateX(70px);
   background-color: #99E2D0;
   color: #FFF;
+  transition: transform 700ms;
+}
+section li:hover .price,
+section li:focus .price,
+section li:hover .fa-circle-check,
+section li:focus .fa-circle-check {
+  transform: translateX(0);
 }
 
 /* ********** TABLET ********** */

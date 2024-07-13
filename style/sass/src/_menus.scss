@@ -7,7 +7,7 @@
 
   50% {
     opacity: 0;
-    transform: translateY(-50px); 
+    transform: translateY(-50px);
   }
 }
 
@@ -23,28 +23,6 @@ main {
 
 /* ********** INTRO ********** */
 
-hgroup {
-  position: relative;
-
-  h1 {
-    position: relative;
-    z-index: 10;
-    margin-top: -40px;
-    border-radius: 35px 35px 0 0;
-    padding: 35px 15px 0;
-    font-family: $serif;
-    font-size: 1.7rem;
-    background-color: $silver;
-  }
-
-  .fa-heart {
-    right: 40px;
-    bottom: 10px;
-  }
-}
-
-/* ********** MENU ********** */
-
 article {
   display: flex;
   flex-direction: column;
@@ -52,23 +30,45 @@ article {
   padding-bottom: 20px;
   background-color: $silver;
 
-  section {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 0 10px;
+  & > hgroup {
+    position: relative;
 
-    &:nth-child(2) {
-      animation: translate 1s;
+    h1 {
+      position: relative;
+      z-index: 10;
+      margin-top: -40px;
+      border-radius: 35px 35px 0 0;
+      padding: 35px 15px 0;
+      font-family: $serif;
+      font-size: 1.7rem;
+      background-color: $silver;
     }
 
-    &:nth-child(3) {
-      animation: translate 2s;
+    .fa-heart {
+      right: 40px;
+      bottom: 10px;
     }
+  }
+}
 
-    &:nth-child(4) {
-      animation: translate 3s;
-    }
+/* ********** MENU ********** */
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 10px;
+
+  &:nth-child(2) {
+    animation: translate 1s;
+  }
+
+  &:nth-child(3) {
+    animation: translate 2s;
+  }
+
+  &:nth-child(4) {
+    animation: translate 3s;
   }
 
   h2 {
@@ -76,7 +76,7 @@ article {
     text-transform: uppercase;
   }
 
-  div {
+  .underline {
     margin-top: 5px;
     width: 40px;
     height: 3px;
@@ -90,41 +90,68 @@ article {
   }
 
   li {
+    display: flex;
+    place-content: space-between;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
     border-radius: 15px;
-    padding: 10px 20px;
     height: 69px;
     background-color: $white;
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
 
-  h3 {
-    margin-bottom: 5px;
-    font-size: 1.125rem;
+  hgroup,
+  hgroup h3,
+  hgroup p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
-  p {
-    font-size: 0.9rem;
+  hgroup {
+    padding: 10px 20px;
+
+    h3 {
+      margin-bottom: 5px;
+      font-size: 1.125rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .price {
+    display: flex;
+    gap: 20px;
+    transform: translateX(70px);
+    transition: transform 700ms;
   }
 
   b {
-    display: flex;
-    place-content: flex-end;
+    place-self: flex-end;
     position: relative;
-    bottom: 18px;
+    bottom: 13px;
   }
 
   .fa-circle-check {
-    position: absolute;
-    z-index: 1;
-    top: 10%;
-    right: -65px;
-    padding: 30px 20px;
+    display: flex;
+    place-items: center;
+    padding: 0 20px;
+    height: 100%;
+    transform: translateX(70px);
     background-color: $tertiary;
     color: $white;
+    transition: transform 700ms;
+  }
+
+  li:hover .price,
+  li:focus .price,
+  li:hover .fa-circle-check,
+  li:focus .fa-circle-check {
+    transform: translateX(0);
   }
 }
 
@@ -146,7 +173,7 @@ article {
     width: 634px;
   }
 
-  
+
 }
 
 /* ********** DESKTOP ********** */
