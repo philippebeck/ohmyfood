@@ -87,9 +87,8 @@ header {
 
 .heart {
   border: none;
-  background-color: #F6F6F6;
+  background-color: $silver;
   padding: 0;
-  font-size: x-large;
 
   .fa-heart {
     position: absolute;
@@ -108,15 +107,13 @@ header {
 
   .fa-solid {
     opacity: 0;
-    transition-duration: 2500ms;
-    background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+    transition-duration: 2s;
+    background-image: linear-gradient(to bottom, $secondary, $primary 80%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
   }
 }
-
-
 
 /* ********** FOOTER ********** */
 

@@ -91,7 +91,6 @@ header img {
   border: none;
   background-color: #F6F6F6;
   padding: 0;
-  font-size: x-large;
 }
 .heart .fa-heart {
   position: absolute;
@@ -107,7 +106,7 @@ header img {
 }
 .heart .fa-solid {
   opacity: 0;
-  transition-duration: 2500ms;
+  transition-duration: 2s;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
   background-clip: text;
   -webkit-background-clip: text;
