@@ -19,31 +19,24 @@
 }
 
 .heart {
-  border: none;
-  background-color: $silver;
-  padding: 0;
 
   .fa-heart {
     position: absolute;
     z-index: 100;
     font-size: 1.35rem;
     cursor: pointer;
-
-    &::before {
-      content: "\f004";
-    }
-  }
-
-  .fa-regular {
-    opacity: 1;
   }
 
   .fa-solid {
     opacity: 0;
-    transition-duration: 2s;
+    transition: opacity 3s;
     background-image: linear-gradient(to bottom, $secondary, $primary 80%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+  }
+
+  input:checked ~ .fa-solid {
+    opacity: 1;
   }
 }

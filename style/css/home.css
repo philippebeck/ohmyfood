@@ -47,6 +47,10 @@ a {
   color: inherit;
 }
 
+[type=checkbox] {
+  display: none;
+}
+
 header {
   display: flex;
   place-content: center;
@@ -83,30 +87,22 @@ header img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.heart {
-  border: none;
-  background-color: #F6F6F6;
-  padding: 0;
-}
 .heart .fa-heart {
   position: absolute;
   z-index: 100;
   font-size: 1.35rem;
   cursor: pointer;
 }
-.heart .fa-heart::before {
-  content: "\f004";
-}
-.heart .fa-regular {
-  opacity: 1;
-}
 .heart .fa-solid {
   opacity: 0;
-  transition-duration: 2s;
+  transition: opacity 3s;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+.heart input:checked ~ .fa-solid {
+  opacity: 1;
 }
 
 footer {
