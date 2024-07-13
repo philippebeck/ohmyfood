@@ -1,3 +1,16 @@
+/* ********** KEYFRAMES ********** */
+
+@keyframes translate {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(-50px); 
+  }
+}
+
 /* ********** MAIN ********** */
 
 main {
@@ -44,6 +57,18 @@ article {
     flex-direction: column;
     gap: 12px;
     padding: 0 10px;
+
+    &:nth-child(2) {
+      animation: translate 1s;
+    }
+
+    &:nth-child(3) {
+      animation: translate 2s;
+    }
+
+    &:nth-child(4) {
+      animation: translate 3s;
+    }
   }
 
   h2 {
