@@ -256,26 +256,20 @@ section b {
   place-self: flex-end;
   position: relative;
   bottom: 13px;
-  transform: translateX(60px);
-  transition: transform 700ms;
 }
 section .fa-circle-check {
   display: flex;
   place-items: center;
+  margin-right: -60px;
   padding: 0 20px;
   height: 100%;
-  transform: translateX(65px);
   background-color: hsl(165, 56%, 79%);
   color: hsl(0, 0%, 100%);
-  transition: transform 700ms;
-}
-section li:hover b,
-section li:focus b {
-  transform: translateX(-5px);
+  transition: margin-right 700ms;
 }
 section li:hover .fa-circle-check,
 section li:focus .fa-circle-check {
-  transform: translateX(0);
+  margin-right: 0;
 }
 
 /* ********** TABLET ********** */

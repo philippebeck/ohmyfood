@@ -77,28 +77,21 @@ section {
     place-self: flex-end;
     position: relative;
     bottom: 13px;
-    transform: translateX(60px);
-    transition: transform 700ms;
   }
 
   .fa-circle-check {
     display: flex;
     place-items: center;
+    margin-right: -60px;
     padding: 0 20px;
     height: 100%;
-    transform: translateX(65px);
     background-color: $tertiary;
     color: $white;
-    transition: transform 700ms;
-  }
-
-  li:hover b,
-  li:focus b {
-    transform: translateX(-5px);
+    transition: margin-right 700ms;
   }
 
   li:hover .fa-circle-check,
   li:focus .fa-circle-check {
-    transform: translateX(0);
+    margin-right: 0;
   }
 }
