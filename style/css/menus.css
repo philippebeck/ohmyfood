@@ -126,6 +126,7 @@ footer ul {
 @media (min-width: 48rem) {
   footer {
     flex-flow: row-reverse;
+    place-items: center;
     box-sizing: border-box;
     padding: 20px 50px;
     height: 114px;
