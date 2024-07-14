@@ -1,3 +1,4 @@
+/* ********** FONT-FACE ********** */
 @font-face {
   font-family: Roboto;
   font-style: normal;
@@ -11,6 +12,40 @@
   font-weight: 400;
   font-display: swap;
   src: local("Shrikhand-Regular"), url("../../fonts/Shrikhand-Regular.woff2") format("woff2");
+}
+/* ********** KEYFRAMES ********** */
+@keyframes cover {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  80% {
+    height: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes rotate {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes translate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
 }
 html {
   scroll-behavior: smooth;
@@ -76,6 +111,7 @@ header img {
   border-radius: 25px;
   padding: 15px 25px;
   width: 200px;
+  font-size: 1rem;
   font-weight: bold;
   background-image: linear-gradient(180deg, hsl(317, 100%, 74%) 0%, hsl(267, 66%, 60%) 100%);
   color: hsl(0, 0%, 100%);
@@ -127,16 +163,10 @@ footer ul {
   footer {
     flex-flow: row-reverse;
     place-items: center;
-    box-sizing: border-box;
     padding: 20px 50px;
-    height: 114px;
   }
   footer ul {
-    flex-flow: column wrap;
     width: 100%;
-  }
-  footer li:nth-child(2) {
-    margin-right: 40px;
   }
 }
 /* ********** DESKTOP ********** */
@@ -148,29 +178,8 @@ footer ul {
     flex-flow: row;
     place-content: flex-end;
   }
-}
-@keyframes cover {
-  0% {
-    width: 100%;
-    height: 100%;
-  }
-  80% {
-    height: 100%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@keyframes rotate {
-  0% {
-    opacity: 1;
-    transform: rotate(0deg);
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(180deg);
+  footer li:nth-child(2) {
+    margin-right: 40px;
   }
 }
 .loader {
@@ -238,6 +247,25 @@ hgroup a {
   font-size: 1rem;
 }
 
+/* ********** TABLET ********** */
+@media (min-width: 48rem) {
+  hgroup {
+    padding: 40px 50px 10px;
+  }
+  hgroup h1,
+  hgroup p {
+    width: fit-content;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+/* ********** DESKTOP ********** */
+@media (min-width: 64rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 section {
   padding: 50px 20px;
 }
@@ -282,6 +310,22 @@ section li:hover i, section li:focus i {
   color: hsl(267, 66%, 60%);
 }
 
+/* ********** TABLET ********** */
+@media (min-width: 48rem) {
+  section {
+    padding: 50px;
+  }
+}
+/* ********** DESKTOP ********** */
+@media (min-width: 64rem) {
+  section {
+    margin: auto;
+    max-width: 1080px;
+  }
+  section ol {
+    flex-flow: nowrap;
+  }
+}
 article {
   padding: 50px 20px;
   background-color: hsl(0, 0%, 97%);
@@ -329,19 +373,6 @@ article .fa-heart {
 
 /* ********** TABLET ********** */
 @media (min-width: 48rem) {
-  hgroup {
-    padding: 40px 50px 10px;
-  }
-  hgroup h1,
-  hgroup p {
-    width: fit-content;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  section {
-    padding: 50px;
-  }
   article {
     padding: 50px;
   }
@@ -354,16 +385,6 @@ article .fa-heart {
 }
 /* ********** DESKTOP ********** */
 @media (min-width: 64rem) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  section {
-    margin: auto;
-    max-width: 1080px;
-  }
-  section ol {
-    flex-flow: nowrap;
-  }
   h2,
   ul {
     margin: auto;

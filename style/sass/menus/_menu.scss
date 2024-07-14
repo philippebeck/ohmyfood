@@ -95,3 +95,12 @@ section {
     margin-right: 0;
   }
 }
+
+/* ********** TABLET ********** */
+
+@media (min-width: $md) {
+  section {
+    margin: auto;
+    width: 634px;
+  }
+}

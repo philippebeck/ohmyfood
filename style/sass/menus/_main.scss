@@ -5,3 +5,11 @@ main {
     object-position: 50% 60%;
   }
 }
+
+/* ********** DESKTOP ********** */
+
+@media (min-width: $lg) {
+  main {
+    background-color: $white;
+  }
+}

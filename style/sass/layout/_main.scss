@@ -5,6 +5,7 @@
   border-radius: 25px;
   padding: 15px 25px;
   width: 200px;
+  font-size: 1rem;
   font-weight: bold;
   background-image: linear-gradient(180deg, $secondary 0%, $primary 100%);
   color: $white;
@@ -19,7 +20,6 @@
 }
 
 .heart {
-
   .fa-heart {
     position: absolute;
     z-index: 100;

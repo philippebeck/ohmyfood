@@ -47,3 +47,24 @@ section {
     }
   }
 }
+
+/* ********** TABLET ********** */
+
+@media (min-width: $md) {
+  section {
+    padding: 50px;
+  }
+}
+
+/* ********** DESKTOP ********** */
+
+@media (min-width: $lg) {
+  section {
+    margin: auto;
+    max-width: 1080px;
+
+    ol {
+      flex-flow: nowrap;
+    }
+  }
+}

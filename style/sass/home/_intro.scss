@@ -20,3 +20,28 @@ hgroup {
     font-size: 1rem;
   }
 }
+
+/* ********** TABLET ********** */
+
+@media (min-width: $md) {
+  hgroup {
+    padding: 40px 50px 10px;
+
+    h1,
+    p {
+      width: fit-content;
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ********** DESKTOP ********** */
+
+@media (min-width: $lg) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}

@@ -49,3 +49,29 @@ article {
     right: 20px;
   }
 }
+
+/* ********** TABLET ********** */
+
+@media (min-width: $md) {
+  article {
+    padding: 50px;
+
+    ul {
+      gap: 50px;
+
+      li {
+        width: calc((100% - 50px) / 2);
+      }
+    }
+  }
+}
+
+/* ********** DESKTOP ********** */
+
+@media (min-width: $lg) {
+  h2,
+  ul {
+    margin: auto;
+    max-width: 1080px;
+  }
+}
