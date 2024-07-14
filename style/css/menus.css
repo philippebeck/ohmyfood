@@ -209,7 +209,7 @@ section h2 {
   text-transform: uppercase;
 }
 section div {
-  margin-top: 5px;
+  margin-top: -8px;
   width: 40px;
   height: 3px;
   background-color: hsl(165, 56%, 79%);
