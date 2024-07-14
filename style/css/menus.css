@@ -77,8 +77,8 @@ header img {
   padding: 15px 25px;
   width: 200px;
   font-weight: bold;
-  background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-  color: #FFF;
+  background-image: linear-gradient(180deg, hsl(317, 100%, 74%) 0%, hsl(267, 66%, 60%) 100%);
+  color: hsl(0, 0%, 100%);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
@@ -96,7 +96,7 @@ header img {
 .heart .fa-solid {
   opacity: 0;
   transition: opacity 3s;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  background-image: linear-gradient(to bottom, hsl(317, 100%, 74%), hsl(267, 66%, 60%) 80%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -110,8 +110,8 @@ footer {
   flex-flow: column;
   gap: 15px;
   padding: 25px;
-  background-color: #353535;
-  color: #FFF;
+  background-color: hsl(0, 0%, 21%);
+  color: hsl(0, 0%, 100%);
 }
 footer h3 {
   font-family: Shrikhand, serif;
@@ -168,7 +168,7 @@ article {
   flex-direction: column;
   gap: 40px;
   padding-bottom: 20px;
-  background-color: #F6F6F6;
+  background-color: hsl(0, 0%, 97%);
 }
 article > hgroup {
   position: relative;
@@ -181,7 +181,7 @@ article > hgroup h1 {
   padding: 35px 15px 0;
   font-family: Shrikhand, serif;
   font-size: 1.7rem;
-  background-color: #F6F6F6;
+  background-color: hsl(0, 0%, 97%);
 }
 article > hgroup .fa-heart {
   top: 5px;
@@ -211,7 +211,7 @@ section div {
   margin-top: 5px;
   width: 40px;
   height: 3px;
-  background-color: #99E2D0;
+  background-color: hsl(165, 56%, 79%);
 }
 section ul {
   display: flex;
@@ -226,7 +226,7 @@ section li {
   box-sizing: border-box;
   border-radius: 15px;
   height: 69px;
-  background-color: #FFF;
+  background-color: hsl(0, 0%, 100%);
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
@@ -264,8 +264,8 @@ section .fa-circle-check {
   padding: 0 20px;
   height: 100%;
   transform: translateX(65px);
-  background-color: #99E2D0;
-  color: #FFF;
+  background-color: hsl(165, 56%, 79%);
+  color: hsl(0, 0%, 100%);
   transition: transform 700ms;
 }
 section li:hover b,
@@ -300,12 +300,12 @@ section li:focus .fa-circle-check {
 /* ********** DESKTOP ********** */
 @media (min-width: 64rem) {
   main {
-    background-color: #FFF;
+    background-color: hsl(0, 0%, 100%);
   }
   article {
     margin: auto;
     max-width: 1080px;
-    background-color: #F6F6F6;
+    background-color: hsl(0, 0%, 97%);
   }
 }
 

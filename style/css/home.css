@@ -77,8 +77,8 @@ header img {
   padding: 15px 25px;
   width: 200px;
   font-weight: bold;
-  background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-  color: #FFF;
+  background-image: linear-gradient(180deg, hsl(317, 100%, 74%) 0%, hsl(267, 66%, 60%) 100%);
+  color: hsl(0, 0%, 100%);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
@@ -96,7 +96,7 @@ header img {
 .heart .fa-solid {
   opacity: 0;
   transition: opacity 3s;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  background-image: linear-gradient(to bottom, hsl(317, 100%, 74%), hsl(267, 66%, 60%) 80%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -110,8 +110,8 @@ footer {
   flex-flow: column;
   gap: 15px;
   padding: 25px;
-  background-color: #353535;
-  color: #FFF;
+  background-color: hsl(0, 0%, 21%);
+  color: hsl(0, 0%, 100%);
 }
 footer h3 {
   font-family: Shrikhand, serif;
@@ -177,7 +177,7 @@ footer ul {
   z-index: 1000;
   width: 0%;
   height: 0%;
-  background-color: #353535;
+  background-color: hsl(0, 0%, 21%);
   animation: cover 2s;
 }
 .loader [class*=fa-stack] {
@@ -187,10 +187,10 @@ footer ul {
   animation: rotate 2s linear;
 }
 .loader .fa-stack-1x {
-  color: #99E2D0;
+  color: hsl(165, 56%, 79%);
 }
 .loader .fa-stack-2x {
-  color: #9356DC;
+  color: hsl(267, 66%, 60%);
 }
 
 form {
@@ -200,8 +200,8 @@ form {
   gap: 10px;
   position: relative;
   height: 50px;
-  background-color: #EAEAEA;
-  color: #353535;
+  background-color: hsl(0, 0%, 92%);
+  color: hsl(0, 0%, 21%);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 form label,
@@ -213,14 +213,14 @@ form input {
   border: none;
   width: 130px;
   font-size: 1rem;
-  background-color: #EAEAEA;
-  color: #353535;
+  background-color: hsl(0, 0%, 92%);
+  color: hsl(0, 0%, 21%);
 }
 
 hgroup {
   padding: 40px 20px 10px;
   text-align: center;
-  background-color: #F6F6F6;
+  background-color: hsl(0, 0%, 97%);
 }
 hgroup h1 {
   margin: 0 auto 10px;
@@ -231,7 +231,7 @@ hgroup p {
   margin: auto;
   width: 310px;
   font-size: 1.1rem;
-  color: #353535;
+  color: hsl(0, 0%, 21%);
 }
 hgroup a {
   font-size: 1rem;
@@ -271,19 +271,19 @@ section li::before {
   height: 24px;
   counter-increment: li;
   content: counters(li, ".") "";
-  background: #9356DC;
+  background: hsl(267, 66%, 60%);
   color: white;
 }
 section li i {
-  color: #7E7E7E;
+  color: hsl(0, 0%, 49%);
 }
 section li:hover i, section li:focus i {
-  color: #9356DC;
+  color: hsl(267, 66%, 60%);
 }
 
 article {
   padding: 50px 20px;
-  background-color: #F6F6F6;
+  background-color: hsl(0, 0%, 97%);
 }
 article ul {
   display: flex;
@@ -303,8 +303,8 @@ article b {
   right: 15px;
   border-radius: 2px;
   padding: 7px 9px;
-  background-color: #99E2D0;
-  color: #008766;
+  background-color: hsl(165, 56%, 79%);
+  color: hsl(165, 100%, 21%);
 }
 article img {
   border-radius: 15px 15px 0 0;
@@ -319,7 +319,7 @@ article figcaption {
   margin-top: -5px;
   border-radius: 0 0 15px 15px;
   padding: 15px;
-  background-color: #FFF;
+  background-color: hsl(0, 0%, 100%);
 }
 article .fa-heart {
   top: 20px;
